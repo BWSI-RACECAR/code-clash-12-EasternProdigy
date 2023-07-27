@@ -30,6 +30,7 @@ class Solution:
     def isBalanced(self, parenthesis): 
             #type parenthesis: string
             #return type: boolean
+            return parenthesis == parenthesis[::-1]
             return parenthesis.count("(") == parenthesis.count(")") and parenthesis.count("[") and parenthesis.count("]") and parenthesis.count("{") and parenthesis.count("}")
                       
             
